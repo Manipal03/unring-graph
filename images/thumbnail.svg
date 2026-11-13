@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <!-- Devpost thumbnail (3:2). Same mark as logo.svg, plus name, tagline and verdict legend. -->
+  <defs>
+    <marker id="head" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="3.2" markerHeight="3.2" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#58A6FF"/>
+    </marker>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#58A6FF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#58A6FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#0E1116"/>
+  <circle cx="330" cy="420" r="330" fill="url(#glow)"/>
+
+  <g transform="translate(330 430) scale(1.08)">
+    <circle r="140" fill="none" stroke="#58A6FF" stroke-opacity="0.18" stroke-width="3" stroke-dasharray="6 10"/>
+    <circle r="260" fill="none" stroke="#58A6FF" stroke-opacity="0.10" stroke-width="3" stroke-dasharray="6 10"/>
+    <g stroke="#3D4652" stroke-width="5" stroke-linecap="round">
+      <line x1="0" y1="0" x2="0" y2="-140"/>
+      <line x1="0" y1="0" x2="121" y2="70"/>
+      <line x1="0" y1="0" x2="-121" y2="70"/>
+      <line x1="0" y1="-140" x2="130" y2="-225"/>
+      <line x1="0" y1="-140" x2="-130" y2="-225"/>
+      <line x1="121" y1="70" x2="251" y2="67"/>
+    </g>
+    <path d="M -29 -50.2 A 58 58 0 1 0 29 -50.2" fill="none" stroke="#58A6FF" stroke-width="9" stroke-linecap="round" marker-end="url(#head)"/>
+    <circle r="30" fill="#E6EDF3"/>
+    <circle cx="0" cy="-140" r="22" fill="#3FB950"/>
+    <circle cx="121" cy="70" r="22" fill="#D29922"/>
+    <circle cx="-121" cy="70" r="22" fill="#F85149"/>
+    <circle cx="130" cy="-225" r="16" fill="#3FB950"/>
+    <circle cx="-130" cy="-225" r="16" fill="#3FB950"/>
+    <circle cx="251" cy="67" r="15" fill="#0E1116" stroke="#8B949E" stroke-width="4" stroke-dasharray="5 5"/>
+  </g>
+
+  <g font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">
+    <text x="656" y="345" font-size="74" font-weight="700" fill="#E6EDF3" letter-spacing="-1">unring<tspan fill="#58A6FF">-graph</tspan></text>
+    <text x="660" y="410" font-size="32" fill="#8B949E">What breaks if you undo</text>
+    <text x="660" y="452" font-size="32" fill="#8B949E">an AI agent's action?</text>
+
+    <g font-size="22" fill="#C9D1D9">
+      <circle cx="670" cy="532" r="9" fill="#3FB950"/><text x="688" y="540">reversible</text>
+      <circle cx="840" cy="532" r="9" fill="#D29922"/><text x="858" y="540">partial</text>
+      <circle cx="670" cy="576" r="9" fill="#F85149"/><text x="688" y="584">irreversible</text>
+      <circle cx="840" cy="576" r="8" fill="none" stroke="#8B949E" stroke-width="3" stroke-dasharray="4 4"/><text x="858" y="584">unknown</text>
+    </g>
+    <text x="660" y="680" font-size="22" fill="#6E7681">Agent effect ledger as a graph · built with Relate</text>
+  </g>
+</svg>
